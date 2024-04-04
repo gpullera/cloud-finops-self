@@ -1,4 +1,5 @@
-{
+[
+  {
   "version": "0",
   "id": "eac97680-4044-b54e-1e95-5821fdfbf3df",
   "detail-type": "AWS Health Event",
@@ -39,4 +40,36 @@
     "page": "1",
     "totalPages": "1"
   }
+ },
+{
+  "version": "0",
+  "id": "bf234ef8-fd70-b7a0-bc0d-7bbd189135f2",
+  "detail-type": "AWS Health Event",
+  "source": "aws.health",
+  "account": "490478149929",
+  "time": "2023-10-19T17:46:35Z",
+  "region": "us-east-1",
+  "resources": [],
+  "detail": {
+    "eventArn": "arn:aws:health:us-east-1::event/S3_REPLICATION_TIME_CONTROL/AWS_S3_REPLICATION_TIME_CONTROL_OPERATIONAL_ISSUE/AWS_S3_REPLICATION_TIME_CONTROL_OPERATIONAL_ISSUE_229B4_6E9B3927D03",
+    "service": "S3_REPLICATION_TIME_CONTROL",
+    "eventTypeCode": "AWS_S3_REPLICATION_TIME_CONTROL_OPERATIONAL_ISSUE",
+    "eventTypeCategory": "issue",
+    "eventScopeCode": "PUBLIC",
+    "communicationId": "4843de57215ae62c9033d9b1e29acaef7e7f764c-1",
+    "startTime": "Wed, 18 Oct 2023 11:27:38 GMT",
+    "lastUpdatedTime": "Thu, 19 Oct 2023 17:46:34 GMT",
+    "statusCode": "open",
+    "eventRegion": "us-east-1",
+    "eventDescription": [
+      {
+        "language": "en_US",
+        "latestDescription": "Current severity level: Informational\n\nElevated Replication latency\n\n[10:46 AM PDT] We are operating our replication subsystem at full throughput now so we can process RTC replication and backlog from the US-EAST-1 Region to different destinations. Customers needing to replicate or backup S3 data while we restore normal operations to the replication subsystem should use S3's COPY API, S3's Batch Operations using the COPY API, or AWS Backup. We will provide you with a further update by Oct 19 11:45 AM PDT.\n\nThe following AWS services have been affected by this event: RESOURCEEXPLORER (Informational)."
+      }
+    ],
+    "affectedAccount": "490478149929",
+    "page": "1",
+    "totalPages": "1"
+  }
 }
+]
