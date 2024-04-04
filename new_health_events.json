@@ -1,0 +1,42 @@
+{
+  "version": "0",
+  "id": "eac97680-4044-b54e-1e95-5821fdfbf3df",
+  "detail-type": "AWS Health Event",
+  "source": "aws.health",
+  "account": "984532411092",
+  "time": "2024-01-23T06:40:00Z",
+  "region": "us-east-1",
+  "resources": [
+    "984532411092"
+  ],
+  "detail": {
+    "eventTypeCode": "AWS_SECRETSMANAGER_SECURITY_NOTIFICATION",
+    "communicationId": "d04a58061ae2af07496ce2c11675589305f93e4d0a2e2b42b194f45d862f36b2-1",
+    "eventScopeCode": "ACCOUNT_SPECIFIC",
+    "eventTypeCategory": "accountNotification",
+    "affectedEntities": [
+      {
+        "entityValue": "984532411092",
+        "lastUpdatedTime": "Fri, 26 Jan 2024 03:57:12 GMT"
+      }
+    ],
+    "eventMetadata": {
+      "deprecated_versions": "events published with \"aRN\" as the response element"
+    },
+    "eventArn": "arn:aws:health:global::event/SECRETSMANAGER/AWS_SECRETSMANAGER_SECURITY_NOTIFICATION/AWS_SECRETSMANAGER_SECURITY_NOTIFICATION_4fe3c78757e317459a3caf7d76f5ce460352bdcae9f85e0492778a66f338ce85",
+    "service": "SECRETSMANAGER",
+    "eventDescription": [
+      {
+        "latestDescription": "This is a reminder that on January 26, 2024, AWS Secrets Manager will be deploying a change to the format of our AWS CloudTrail events that could impact any workload which consumes these events. We previously notified you about this upcoming change in August 2023. This change is being made to standardize the response element for secret ARN in AWS CloudTrail events for all AWS Secret Manager APIs. If you do not use AWS CloudTrail logs for AWS Secrets Manager, you can disregard this message.\n\nCurrently, the 10 CloudTrail events listed below are published with “aRN” as the response element while the rest of the events are published with “arn” as the response element. If you are consuming AWS Secrets Manager CloudTrail events in your workloads either directly or via Amazon EventBridge, we recommend you inspect your application code or event filters as soon as possible to determine if you are consuming any of these 10 events, and if so whether they require any updates to support both formats of the secret ARN response element (“arn” or “aRN”). This will ensure your workload is not impacted by this upcoming change.\n\nPlease refer to this link [1] for details on the change to the response element of AWS CloudTrail events for AWS Secrets Manager.\n\nList of events that currently publish “aRN” and will be changed to “arn” starting January 2024:\nCancelRotateSecret\nDeleteResourcePolicy\nDeleteSecret\nPutResourcePolicy\nRemoveRegionsFromReplication\nReplicateSecretToRegions\nRestoreSecret\nRotateSecret\nStopReplicationToReplica\nUpdateSecretVersionStage\n\nList of events with no change:\nCreateSecret\nDescribeSecret\nGetRandomPassword\nGetResourcePolicy\nGetSecretValue\nListSecrets\nListSecretVersionIds\nPutSecretValue\nTagResource\nUntagResource\nUpdateSecret\nValidateResourcePolicy\n\nIf you have any questions, please contact AWS Support [2].\n\n[1] https://repost.aws/knowledge-center/secrets-manager-arn\n[2] https://aws.amazon.com/support",
+        "language": "en_US"
+      }
+    ],
+    "lastUpdatedTime": "Fri, 26 Jan 2024 08:59:21 GMT",
+    "startTime": "Tue, 23 Jan 2024 06:40:00 GMT",
+    "eventRegion": "global",
+    "statusCode": "open",
+    "affectedAccount": "984532411092",
+    "page": "1",
+    "totalPages": "1"
+  }
+}
